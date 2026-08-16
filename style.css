@@ -1,0 +1,281 @@
+* {
+   --menu-background: rgba(255, 255, 255, 0.5);
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-family: 'Roboto', sans-serif;
+}
+
+.menu {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 9999;
+   line-height: initial;
+   background: var(--menu-background);
+   backdrop-filter: blur(20px);
+}
+
+.menu .wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   max-width: 1234px;
+   padding: 0 20px;
+   margin: 0 auto;
+}
+
+.menu .navigation-items {
+   display: flex;
+   list-style: none;
+   align-items: center;
+}
+
+.menu .navigation-items li a {
+   display: block;
+   padding: 22px 5px;
+   text-decoration: none;
+   color: #3d3d3d;
+   font-size: 1.2rem;
+}
+
+.menu .navigation-items li a>span {
+   padding: 12px 15px;
+   border-radius: 36px;
+}
+
+.menu .navigation-items li a:hover>span {
+   background-color: rgba(220, 220, 220, 0.4);
+}
+
+.menu .navigation-items li button:hover {
+   background-color: rgba(220, 220, 220, 0.4);
+}
+
+.menu .navigation-items li button>svg {
+   margin: 5px 5px;
+}
+
+.menu .navigation-items li button {
+   margin-left: 10px;
+   padding: 2px 2px;
+   border-radius: 36px;
+   border: 0 transparent;
+   outline: 0 transparent;
+   cursor: pointer;
+   background: none;
+}
+
+.menu .v-line {
+   margin: 15px 0;
+   height: 30px;
+}
+
+.menu .lang .lang-name {
+   font-size: 1.8rem;
+   color: #000;
+}
+
+.menu .lang {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+.v-line {
+   border-left: 2px solid #3d3d3d;
+}
+
+.container {
+   max-width: 1200px;
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 1rem;
+   padding-right: 1rem;
+   /*border: 1px solid #000;*/
+}
+
+
+.main {
+   padding-top: 60px;
+   padding-bottom: 20px;
+   background-color: #aaffd2;  /*#ffbf00   #ffd455 #ffdd77 #ffe599 #ffaae4*/
+}
+
+.main .wrapper {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+
+.main .logo {
+   font-size: 152px;
+   color: #808080;
+   padding: 0;
+   position: relative;
+   top: -25px;
+   left: 20px;
+}
+
+.main .logo1 {
+   padding: 0;
+   margin-left: 20px;
+   font-size: 128px;
+   color: #ffbf00;
+   position: relative;
+   top: 25px;
+   left: 20px;
+}
+
+.main .right {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.main .tagline {
+   font-size: 1.6em;
+   color: #3d3d3d;
+}
+
+.main .right .get-started {
+   text-decoration: none;
+   color: #3d3d3d;
+   padding: 20px 30px;
+   border-radius: 36px;
+   background-color: #ffbf00;
+   margin-bottom: 10px;
+   font-size: 1.5rem;
+   color: #000;
+}
+
+.main .right .version {
+   color: #b87aff;
+   font-size: 1.1rem;
+   font-weight: bold;
+}
+
+.main::before {
+    content: "";
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url(/noise.png);
+    opacity: .04;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.why-lang {
+   padding-top: 20px;
+   padding-bottom: 30px;
+   background-color: #ffddf4;  /*#ffbf00   #ffd455 #ffdd77 #ffe599 #ffaae4 #ffccef*/
+}
+
+.why-lang .why-question {
+   display: block;
+   font-size: 1.5rem;
+   margin-bottom: 10px;
+}
+
+.why-lang .why a {
+   text-decoration: none;
+   color: #000;
+}
+
+.why-lang .wrapper {
+}
+
+.why-lang .wrapper nav {
+   display: flex;
+   justify-content: space-around;
+}
+
+.why-lang .wrapper nav .why {
+   font-size: 1.3rem;
+   max-width: 20rem;
+   /*display: flex;*/
+   /*flex-direction: column;*/
+   /*align-items: center;*/
+}
+
+.why-lang .wrapper nav .why .text {
+   font-size: 1.2rem;
+   color: #333333;
+}
+
+.why-lang .wrapper nav .why a {
+   display: block;
+   padding-bottom: 8px;
+   color: #000;
+}
+
+.why-lang .wrapper nav .why a span {
+   display: inline-block;
+}
+
+.why-lang .wrapper nav .why a span::first-letter {
+   font-size: 130%;
+   font-weight: bolder;
+   color: #b87aff;
+}
+
+.why-lang .wrapper nav .why a:hover>span::first-letter {
+   color: #00aa4f;
+}
+
+.why-lang .wrapper nav .why a:hover>span {
+   color: #00aa4f;
+   text-decoration: underline;
+}
+
+.possibilities {
+   padding-top: 20px;
+   padding-bottom: 30px;
+   background-color: #fff6dd;  /*#ffbf00   #ffd455 #ffdd77 #ffe599 #ffaae4 #ffccef*/
+}
+
+.possibilities .wrapper nav {
+   display: grid;
+   grid-template-columns: repeat(3, 20rem);
+   justify-content: space-around;
+   width: 100%;
+}
+
+.possibilities .possibilities-question {
+   display: block;
+   font-size: 1.5rem;
+   margin-bottom: 10px;
+   color: #000;
+}
+
+.possibilities .possibility a {
+   text-decoration: none;
+   color: #3d3d3d;
+   font-size: 1.3rem;
+}
+
+.possibilities .possibility {
+   padding: 6px;
+}
+
+.footer {
+   padding-top: 60px;
+   padding-bottom: 30px;
+   background-color: #eeeeee;
+   font-size: 1.2rem;
+}
+
+.possibilities .wrapper nav .possibility a:hover>span {
+   color: #b87aff;
+   text-decoration: underline;
+}
